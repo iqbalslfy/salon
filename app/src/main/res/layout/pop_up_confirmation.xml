@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/corner_radius_bg_pop_up"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imgcentang"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/succes" />
+
+    <TextView
+        android:id="@+id/id2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgcentang"
+        android:layout_marginTop="5dp"
+        android:fontFamily="monospace"
+        android:text="@string/transactionseukses"
+        android:textAlignment="center"
+        android:textSize="@dimen/size_med"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id2"
+        android:layout_marginTop="5dp"
+        android:fontFamily="monospace"
+        android:text="@string/issuccess"
+        android:textAlignment="center"
+        android:textSize="@dimen/size_med"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

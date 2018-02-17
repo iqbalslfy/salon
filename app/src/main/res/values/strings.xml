@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Salon</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="signin">Sign In</string>
+    <string name="create_account">Create Account</string>
+    <string name="forgot_password_mark">Forgot Password?</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="wallet">Wallet</string>
+
+    <string name="mytransaksi">My Transaksi</string>
+    <string name="profil">Setting Profil</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="email">Email</string>
+    <string name="send">Send</string>
+    <string name="booking">Booking</string>
+    <string name="confirmation">Confirmation</string>
+    <string name="permanent">Permanent Blow Dry</string>
+    <string name="keratins">Keratin Steampod</string>
+    <string name="keratin">Keratin</string>
+    <string name="supersoft">Super Soft Keratin</string>
+    <string name="smoothing">Smoothing Jepang</string>
+    <string name="airware">Airwave</string>
+    <string name="digital">Digital Wave</string>
+    <string name="keritingjepang">Keriting Jepang Manual</string>
+    <string name="keritinggetar">Keriting Getar</string>
+    <string name="clasical">Clasical Style</string>
+    <string name="coloritely">Color Italy</string>
+    <string name="creative">Creative Coloring</string>
+    <string name="glossy">Glossy Spain</string>
+    <string name="bokingsukses">Booking is Successfully</string>
+    <string name="transactionseukses">Transactin Status: Success Transfer</string>
+    <string name="issuccess">Transaction is Successfully</string>
+    <string name="yourwallate">Your Wallet Balance:</string>
+    <string name="rp">Rp 15.000</string>
+    <string name="waktu">WAKTU</string>
+    <string name="jumlah">JUMLAH</string>
+    <string name="keterangan">KETERANGAN</string>
+    <string name="promo">Promo</string>
+    <string name="hair">Hair Salon Discount</string>
+    <string name="upto">up to</string>
+    <string name="date">12 - 18 Feb 2018</string>
+    <string name="bookingdis">Booking period: </string>
+
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2D99A4</color>
+    <color name="colorPrimaryDark">#26828c</color>
+    <color name="colorAccent">#000000</color>
+
+    <color name="biruTelur">#F5FAFF</color>
+    <color name="biruMuda">#1ABAD5</color>
+    <color name="biruFont">#3899C7</color>
+    <color name="hitamFont">#6E6E6E</color>
+    <color name="abuGaris">#336E6E6E</color>
+    <color name="abuFont">#6E6E6E</color>
+    <color name="abuFont2">#C8C9C9</color>
+    <color name="biruTrans">#993d7383</color>
+    <color name="hitamTitle">#62839b</color>
+    <color name="hitamDesc">#a3b8c5</color>
+    <color name="abuBg">#f7f7f7</color>
+    <color name="abuDateTime">#f7f9fb</color>
+    <color name="merahPetang">#e0004d</color>
+    <color name="hijau">#30a148</color>
+    <color name="kuning">#ffdf16</color>
+    <color name="orange">#ff8c07</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colom">#EEEEEE</color>
+    <color name="biru_pilihan_perawatan">#728FA5</color>
+    <color name="green_check_box">#009944</color>
+    <color name="btnBooking">#1AB9D5</color>
+</resources>

@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.piramidsoft.salon.BookingActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/act_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/booking"
+                android:fontFamily="@font/centurygothicgegular"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_large" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:id="@+id/r1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <ImageView
+                    android:id="@+id/img_tgl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_tanggal" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/text_input_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/img_tgl"
+                    android:fontFamily="@font/centurygothicgegular">
+
+                    <EditText
+                        android:id="@+id/ed_tanggal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/centurygothicgegular"
+                        android:hint="Date"
+                        android:text="Sunday, 20 August 2018"
+                        android:textColor="@color/hitamFont" />
+
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <ImageView
+                    android:id="@+id/img_jam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_time" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/text_input_layout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/centurygothicgegular"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/img_jam">
+
+                    <EditText
+                        android:id="@+id/ed_jam"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Time"
+                        android:fontFamily="@font/centurygothicgegular"
+                        android:text="18:00"
+                        android:textColor="@color/hitamFont" />
+
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <ImageView
+                    android:id="@+id/img_pilihan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_pilihperawatan" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/centurygothicgegular"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/img_pilihan"
+                    android:text="Pilih Perawatan"
+                    android:textColor="@color/biru_pilihan_perawatan"
+                    android:textSize="@dimen/size_med"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:layout_marginLeft="47dp"
+                android:layout_toRightOf="@+id/img_pilihan"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/cb1"
+                    style="@style/MyCheckBox"
+                    android:fontFamily="@font/centurygothicgegular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/permanent"
+                    android:textColor="@color/biru_pilihan_perawatan"
+                    android:theme="@style/MyCheckBox" />
+
+                <CheckBox
+                    android:id="@+id/cb2"
+                    android:fontFamily="@font/centurygothicgegular"
+                    style="@style/MyCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/keratins"
+                    android:textColor="@color/biru_pilihan_perawatan"
+                    android:theme="@style/MyCheckBox" />
+
+                <CheckBox
+                    android:id="@+id/cb3"
+                    android:fontFamily="@font/centurygothicgegular"
+                    style="@style/MyCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/keratin"
+                    android:textColor="@color/biru_pilihan_perawatan"
+                    android:theme="@style/MyCheckBox" />
+
+                <CheckBox
+                    android:id="@+id/cb4"
+                    style="@style/MyCheckBox"
+                    android:fontFamily="@font/centurygothicgegular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/supersoft"
+                    android:textColor="@color/biru_pilihan_perawatan"
+                    android:theme="@style/MyCheckBox" />
+
+                <CheckBox
+                    android:id="@+id/cb5"
+                    style="@style/MyCheckBox"
+                    android:fontFamily="@font/centurygothicgegular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/smoothing"
+                    android:textColor="@color/biru_pilihan_perawatan"
+                    android:theme="@style/MyCheckBox" />
+
+                <CheckBox
+                    android:id="@+id/cb6"
+                    style="@style/MyCheckBox"
+                    android:fontFamily="@font/centurygothicgegular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/airware"
+                    android:textColor="@color/biru_pilihan_perawatan"
+                    android:theme="@style/MyCheckBox" />
+
+                <CheckBox
+                    android:id="@+id/cb7"
+                    android:fontFamily="@font/centurygothicgegular"
+                    style="@style/MyCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/digital"
+                    android:textColor="@color/biru_pilihan_perawatan"
+                    android:theme="@style/MyCheckBox" />
+
+                <CheckBox
+                    android:id="@+id/cb8"
+                    android:fontFamily="@font/centurygothicgegular"
+                    style="@style/MyCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/keritingjepang"
+                    android:textColor="@color/biru_pilihan_perawatan"
+                    android:theme="@style/MyCheckBox" />
+
+                <CheckBox
+                    android:id="@+id/cb9"
+                    style="@style/MyCheckBox"
+                    android:fontFamily="@font/centurygothicgegular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/keritinggetar"
+                    android:textColor="@color/biru_pilihan_perawatan"
+                    android:theme="@style/MyCheckBox" />
+
+                <CheckBox
+                    android:id="@+id/cb10"
+                    android:fontFamily="@font/centurygothicgegular"
+                    style="@style/MyCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/clasical"
+                    android:textColor="@color/biru_pilihan_perawatan"
+                    android:theme="@style/MyCheckBox" />
+
+                <CheckBox
+                    android:id="@+id/cb11"
+                    android:fontFamily="@font/centurygothicgegular"
+                    style="@style/MyCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/coloritely"
+                    android:textColor="@color/biru_pilihan_perawatan"
+                    android:theme="@style/MyCheckBox" />
+
+                <CheckBox
+                    android:id="@+id/cb12"
+                    style="@style/MyCheckBox"
+                    android:fontFamily="@font/centurygothicgegular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/creative"
+                    android:textColor="@color/biru_pilihan_perawatan"
+                    android:theme="@style/MyCheckBox" />
+
+                <CheckBox
+                    android:id="@+id/cb13"
+                    style="@style/MyCheckBox"
+                    android:fontFamily="@font/centurygothicgegular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/glossy"
+                    android:textColor="@color/biru_pilihan_perawatan"
+                    android:theme="@style/MyCheckBox" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnBooking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/centurygothicgegular"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/ripple_effect_booking"
+                android:text="@string/booking"
+                android:textAllCaps="true"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
